@@ -19,7 +19,7 @@ print(pizza_toppings[1])
 pizza_toppings.append('Mushrooms')
 #add list value 
 print(person['name'])
-#access dictionary value 
+#access dictionary value of name key 
 person['name'] = 'George'
 #change dictionary value 
 person['eye_color'] = 'blue'
