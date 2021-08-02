@@ -3,7 +3,7 @@ for x in range(151):
     print(x)
 
 #2. Multiples of Five
-for x in range(5, 1000, 5):
+for x in range(5, 1001, 5):
     print(x)
 
 #3. Counting, the Dojo Way
