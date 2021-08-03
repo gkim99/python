@@ -1,7 +1,7 @@
 #1. Countdown
 def countdown(num):
     countdown_list = []
-    for x in range(num, -1, -1):
+    for x in range(num,-1,-1):
         countdown_list.append(x)
     return countdown_list
 
@@ -18,20 +18,20 @@ def first_plus_length(list):
 
 #4. Values Greater than Second
 def values_greater_than_second(list):
+    if len(list) < 2:
+        return False
     count = 0 
     new_list = []
-    for num in list:
-        if len(list) < 2:
-            return False
-        elif num > list[1]:
-            count +=1
-            new_list.append(num)
+    for i in range(0,len(list)):
+        if list[i] > list[1]:
+            count += 1
+            new_list.append(list[i])
     print(count)
     return new_list
 
 #5. This Length, That Value
 def length_and_value(size,value):
     empty = []
-    empty.append(value) 
-    new = empty * size
-    return new
+    for i in range(0,size):
+        empty.append(value)
+    return empty
