@@ -29,19 +29,19 @@ def number_of_great_lakes():
     print(5)
 x = number_of_great_lakes()
 print(x)
-#5
+#5, None
 
 #6
 def add(b,c):
     print(b+c)
 print(add(1,2) + add(2,3))
-#8
+#3, 5, error (cannot add NoneTypes)
 
 #7
 def concatenate(b,c):
     return str(b)+str(c)
 print(concatenate(2,5))
-#"7"
+#"25"
 
 #8
 def number_of_oceans_or_fingers_or_continents():
@@ -118,6 +118,7 @@ b=foobar()
 print(b)
 #500
 #500
+#300
 #300
 
 #14
