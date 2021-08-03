@@ -12,7 +12,7 @@ class BankAccount:
         return self
 
     def display_account_info(self):
-        print{f"Balance: ${balance}"}
+        print(f"Balance: ${self.balance}")
         return self 
 
     def yield_interest(self):
