@@ -14,7 +14,9 @@ class User:
 
     def transfer_money(self, other_user, amount):
         self.account_balance -= amount
-        other_user += amount
+        other_user.account_balance += amount
+        self.display_user_balance()
+        other_user.display_user_balance()
     
 rawr = User("Rawr")
 moo = User("Moo")
@@ -38,4 +40,4 @@ boo.make_withdrawl(50)
 boo.make_withdrawl(20)
 boo.display_user_balance()
 
-rawr.transfer_money()
+rawr.transfer_money(boo, 150)
