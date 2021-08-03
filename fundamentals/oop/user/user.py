@@ -5,9 +5,11 @@ class User:
     
     def make_deposit(self, amount):
         self.account_balance += amount
+        return self
 
     def make_withdrawl(self, amount):
         self.account_balance -= amount 
+        return self
 
     def display_user_balance(self):
         print(f"User: {self.name}, Balance: {self.account_balance}")
@@ -22,22 +24,10 @@ rawr = User("Rawr")
 moo = User("Moo")
 boo = User("Boo")
 
-rawr.make_deposit(100)
-rawr.make_deposit(200)
-rawr.make_deposit(50)
-rawr.make_withdrawl(150)
-rawr.display_user_balance()
+rawr.make_deposit(100).make_deposit(200).make_deposit(50).make_withdrawl(150).display_user_balance()
 
-moo.make_deposit(100)
-moo.make_deposit(200)
-moo.make_withdrawl(50)
-moo.make_withdrawl(20)
-moo.display_user_balance()
+moo.make_deposit(100).make_deposit(200).make_withdrawl(50).make_withdrawl(20).display_user_balance()
 
-boo.make_deposit(700)
-boo.make_withdrawl(100)
-boo.make_withdrawl(50)
-boo.make_withdrawl(20)
-boo.display_user_balance()
+boo.make_deposit(700).make_withdrawl(100).make_withdrawl(50).make_withdrawl(20).display_user_balance()
 
 rawr.transfer_money(boo, 150)
