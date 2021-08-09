@@ -16,7 +16,7 @@ def say(name):
 
 @app.route('/repeat/<int:num>/<string:var>')
 def repeat(num, var):
-    return 'num * var'
+    return num * var
 
 if __name__=="__main__":
     app.run(debug=True)
