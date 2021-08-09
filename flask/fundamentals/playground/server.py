@@ -13,7 +13,7 @@ def index():
 def index1(num):
     return render_template('index1.html', num=num)
 
-@app.route('/play/<int:num>/<color>')
+@app.route('/play/<int:num>/<string:color>')
 def index2(num, color):
     return render_template('index2.html', num=num, color=color)
 
