@@ -1,0 +1,20 @@
+-- SELECT * FROM users;
+-- INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+-- VALUES('Joe', 'Mayflower', 'joe@gmail.com', NOW(), NOW());
+-- INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+-- VALUES('Wendy', 'Wind', 'wenwindy.com', NOW(), NOW());
+-- INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+-- VALUES('Ruby', 'Lee', 'rubylee@gmail.com', NOW(), NOW());
+-- SELECT * FROM users;
+-- SELECT * FROM users where email LIKE "j%";
+-- SELECT * FROM users where id = 3;
+-- UPDATE users SET last_name = 'Pancakes' 
+-- WHERE id = 3;
+-- DELETE FROM users WHERE id = 2;
+-- select * from users;
+-- select *
+-- from users
+-- order by first_name;
+-- select *
+-- from users
+-- order by first_name desc;

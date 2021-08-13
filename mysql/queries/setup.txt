@@ -1,0 +1,9 @@
+-- SELECT * FROM users;
+-- INSERT INTO users (first_name, last_name, handle, birthday, created_at, updated_at)
+-- VALUES ('Michael', 'Jordan', 'MicJordan', '1963-02-17', NOW(), NOW());
+-- SELECT * FROM users;
+-- UPDATE users SET first_name = 'Hello' 
+-- WHERE id = 1;
+-- SELECT * FROM users;
+-- DELETE FROM users WHERE id = 6;
+-- SELECT * FROM users;
