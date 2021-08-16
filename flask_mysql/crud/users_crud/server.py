@@ -3,7 +3,7 @@ from user import User
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def index():
     users = User.get_all()
     print(users)
@@ -22,6 +22,34 @@ def create_user():
     }
     User.save(data)
     return redirect('/')
+
+@app.route('/user/<int:id>')
+def show(id):
+    data = {
+        "id": id
+    }
+    return render_template("read_one.html", user=User.get_one(data))
+
+@app.route('/user/<int:id>/edit')
+def edit(id):
+    data = {
+        "id": id
+    }
+    return render_template("edit.html", user=User.get_one(data))
+
+@app.route('/user/edit', methods=["POST"])
+def update():
+    User.update(request.form)
+    return redirect('/')
+
+@app.route('/user/<int:id>/delete')
+def delete(id):
+    data = {
+        "id": id
+    }
+    User.delete(data)
+    return redirect('/')
+
 
 if __name__ == "__main__":
     app.run(debug=True)

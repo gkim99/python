@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1{
+    color: yellow;
+}
+
+.question{
+    padding: 10px;
+}
